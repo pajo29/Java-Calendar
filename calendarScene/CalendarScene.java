@@ -89,13 +89,13 @@ public class CalendarScene extends BorderPane{
 		
 		calendarTable = new TableView<>();
 		calendarTable.setMaxHeight(475);
-		calendarClmMonday = new TableColumn<>("Ponedeljak");
-		calendarClmTuesday = new TableColumn<>("Utorak");
-		calendarClmWednesday = new TableColumn<>("Sreda");
-		calendarClmThursday = new TableColumn<>("Četvrtak");
-		calendarClmFriday = new TableColumn<>("Petak");
-		calendarClmSaturday = new TableColumn<>("Subota");
-		calendarClmSunday = new TableColumn<>("Nedelja");
+		calendarClmMonday = new TableColumn<>("Monday");
+		calendarClmTuesday = new TableColumn<>("Tuesday");
+		calendarClmWednesday = new TableColumn<>("Wednesday");
+		calendarClmThursday = new TableColumn<>("Thursday");
+		calendarClmFriday = new TableColumn<>("Friday");
+		calendarClmSaturday = new TableColumn<>("Saturday");
+		calendarClmSunday = new TableColumn<>("Sunday");
 		
 		Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
 		
