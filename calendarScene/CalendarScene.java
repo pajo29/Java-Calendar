@@ -64,11 +64,9 @@ public class CalendarScene extends BorderPane{
 		}
 		cmbYear.getItems().addAll(years);
         
-		btnRight = new Button();
-		btnRight.setStyle("-fx-background-image: url('file:images/arrowRight.png')");
+		btnRight = new Button(">");
 		btnRight.setPrefSize(45, 45);
-		btnLeft = new Button();
-		btnLeft.setStyle("-fx-background-image: url('file:images/arrowLeft.png')");
+		btnLeft = new Button("<");
 		btnLeft.setPrefSize(45, 45);
 		btnChangeYear = new Button("Promeni godinu");
 		
