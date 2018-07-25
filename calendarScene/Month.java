@@ -20,29 +20,29 @@ public class Month {
 	{
 		switch(monthNumber)
 		{
-		case 1: monthName = "Januar";
+		case 1: monthName = "Jan";
 				break;
-		case 2: monthName = "Februar";
+		case 2: monthName = "Feb";
 				break;
-		case 3: monthName = "Mart";
+		case 3: monthName = "March";
 				break;
 		case 4: monthName = "April";
 				break;
-		case 5: monthName = "Maj";
+		case 5: monthName = "May";
 				break;
 		case 6: monthName = "Jun";
 				break;
-		case 7: monthName = "Jul";
+		case 7: monthName = "July";
 				break;
-		case 8: monthName = "Avgust";
+		case 8: monthName = "Aug";
 				break;
-		case 9: monthName = "Septembar";
+		case 9: monthName = "Sept";
 				break;
-		case 10: monthName = "Oktobar";
+		case 10: monthName = "Oct";
 				break;
-		case 11: monthName = "Novembar";
+		case 11: monthName = "Nov";
 				break;
-		case 12: monthName = "Decembar";
+		case 12: monthName = "Dec";
 				break;
 		}
 	}
