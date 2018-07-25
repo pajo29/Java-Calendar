@@ -9,19 +9,13 @@ public class Day {
 	
 	private Date dateofDay;
 	private int dayOfWeek = 0;
-	private ArrayList<String> clients;
 	
 
 	public Day(Date dateofDay, int dayOfWeek) {
-		super();
 		this.dateofDay = dateofDay;
 		this.dayOfWeek = dayOfWeek;
-		clients = new ArrayList<>();
 	}
 
-	public ArrayList<String> getClients() {
-		return clients;
-	}
 
 	public Date getDateofDay() {
 		return dateofDay;
@@ -61,7 +55,7 @@ public class Day {
 			e.printStackTrace();
 		}
 		
-		return sdf.format(dateofDay)+".\n"+clients+"\n ";
+		return sdf.format(dateofDay)+".\n"+"\n ";
 	}
 
 }
