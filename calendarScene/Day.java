@@ -36,6 +36,15 @@ public class Day {
 	@Override
 	public String toString() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd.MM.yyyy.");
+		try {
+			if(getDateofDay().equals(sdf2.parse("01.01.1998.")))
+			{
+				return "";
+			}
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 		
 		return sdf.format(dateofDay)+".\n"+"\n ";
 	}
