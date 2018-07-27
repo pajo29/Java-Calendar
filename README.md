@@ -11,5 +11,5 @@ CalendarMaker.getInstance().isLeapYear(int year);
   -Returns true if the given year is a Leap year
 CalendarMaker.getInstance().numberOfMonthsDays(int year, int month);
   -Retruns the number of days in the given months of the year. Months go from 1-12
-CalendarMaker.getInstance().fomrYears;
+CalendarMaker.getInstance().formYears();
   -Forms the years with the given conditions in the foor loop. (Year span)
