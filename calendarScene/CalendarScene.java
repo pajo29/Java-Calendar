@@ -56,6 +56,8 @@ public class CalendarScene extends BorderPane{
 		calendar = CalendarMaker.getInstance();
 		cmbYear = new ComboBox<>();
 		
+		Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+		
 		monthLabel = new Label();
 		
 		for(Year years: calendar.getYears())
@@ -86,7 +88,7 @@ public class CalendarScene extends BorderPane{
 		});
 		
 		calendarTable = new TableView<>();
-		calendarTable.setMaxHeight(475);
+		calendarTable.setMaxHeight(primaryScreenBounds.getHeight()*0.38);
 		calendarClmMonday = new TableColumn<>("Monday");
 		calendarClmTuesday = new TableColumn<>("Tuesday");
 		calendarClmWednesday = new TableColumn<>("Wednesday");
@@ -95,7 +97,7 @@ public class CalendarScene extends BorderPane{
 		calendarClmSaturday = new TableColumn<>("Saturday");
 		calendarClmSunday = new TableColumn<>("Sunday");
 		
-		Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+
 		
 		calendarClmMonday.setCellValueFactory(new PropertyValueFactory<>("monday"));
 		calendarClmMonday.setPrefWidth(primaryScreenBounds.getWidth()/7);
